@@ -104,7 +104,8 @@ const Products = () => {
             "& > div": { gridColumn: isNonMobile ? undefined : "span 4" },
           }}
         >
-          {data.map(
+          if(data) {
+          data.map(
             ({
               _id,
               name,
